@@ -1,12 +1,8 @@
-.link{
+.link {
   color: red;
   text-decoration: none;
 }
 
 .link:hover {
   color: blue;
-}
-#specialLink {
-  color: green;
-  font-weight: bold;
 }

@@ -8,10 +8,10 @@ export default function Home() {
       <h1>Home</h1>
       <ul>
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/" className={styles.link}>Home</Link>
         </li>
         <li>
-          <Link href="/contact">contact</Link>
+          <Link href="/contact"className={styles.link}>contact</Link>
         </li>
         <li>
           <Link href="/products">Products</Link>
@@ -29,7 +29,7 @@ export default function Home() {
         <li><Link href="/products/vegis">Vegis</Link></li>
       </ul>
 
-        <Link href="https://google.com" target="_blank" rel="noopener noreferrer">Google</Link>
+        <Link href="https://google.com" target="_blank" rel="noopener noreferrer" id={styles.specialLink}>Google</Link>
     </div>
   );
 }
