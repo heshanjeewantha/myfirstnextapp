@@ -1,10 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images:{
-   domains: ["ai.google.dev", "https://ai.google.dev/"],
+   images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+       
+      },
+     
+    ],
+  },
 
-  }
 
+  
 };
 
 export default nextConfig;
