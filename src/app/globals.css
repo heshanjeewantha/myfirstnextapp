@@ -10,3 +10,16 @@ body {
   background-color: #f0f0f0;
   color: #333;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  min-height: 100vh;
+}
+
+
+.row {
+ padding: 1em;
+ border: 1px solid #ccc;
+ background-color: rgb(240, 54, 7);
+}

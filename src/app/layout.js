@@ -1,15 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {Varta  } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const varta = Varta({
+  
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 export const metadata = {
   title: " Next App",
@@ -19,8 +16,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${varta.className} `}>
+        <div className="wrapper">
+        <div className="row"> <h1>global header</h1></div>
         {children}
+        <div className="row"> <h1>global footer</h1></div>
+        </div>
       </body>
     </html>
   );
